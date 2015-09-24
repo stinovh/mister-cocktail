@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
 
 # get '/doses/:id' => 'doses#destroy', as: 'delete'
-
   resources :cocktails do
     resources :doses, only: [:new, :create, :destroy]
   end
-
+  resources :doses, only: [:destroy]
 
   root 'cocktails#index'
   # The priority is based upon order of creation: first created -> highest priority.

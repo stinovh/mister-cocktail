@@ -12,6 +12,7 @@ class CocktailsController < ApplicationController
   def show
     @dose = Dose.new
     @ingredients = Ingredient.all
+    @doses_cocktail = @cocktail.doses.order(created_at: :desc)
   end
 
   # GET /cocktails/new

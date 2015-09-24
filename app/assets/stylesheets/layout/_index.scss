@@ -1,3 +1,33 @@
 @import "utilities";
 @import "footer";
 @import "navbar";
+
+.center {
+  text-align: center;
+  width:50%;
+  margin: auto auto;
+}
+
+.new-cocktail {
+  margin-top: 70px;
+}
+
+body {
+  background-image: url("summer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.white {
+  background-color: rgba(0,0,0,0.4);
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+

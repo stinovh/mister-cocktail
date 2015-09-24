@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
-
-<h1><%= @cocktail.name %></h1>
-<ul>
-<% @doses_cocktail.each do |dose| %>
-  <li><%= dose.ingredient.name + ' : ' + dose.description %> <%= link_to 'destroy', dose, method: :delete %></li>
-<% end %>
-</ul>
-
+<div class="center white">
+    <h1><%= @cocktail.name %></h1>
+    <ul>
+    <% @doses_cocktail.each do |dose| %>
+      <li><%= dose.ingredient.name + ' : ' + dose.description %>
+        <%= link_to 'destroy', dose, method: :delete, class: "btn btn-danger" %></li>
+    <% end %>
+    </ul>
+</div>
 <h3>Add a new ingredient</h3>
 <%= render 'doses/form' %>
 

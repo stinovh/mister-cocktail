@@ -6,6 +6,13 @@
   text-align: center;
   width:50%;
   margin: auto auto;
+  th {
+    text-align: center;
+    font-size: 2em;
+  }
+  td {
+    font-size: 1.5em;
+  }
 }
 
 .new-cocktail {
@@ -29,5 +36,8 @@ a {
 
 ul {
   list-style-type: none;
+  span {
+    text-align: right;
+  }
 }
 
